@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+:root{
+    --light-pink-color: #faf4f5;
+    --white-color:#fff;
+    --dark-color: #252525;
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --medium-gray-color: #ccc;
+
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-1: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    --site-max-width: 1300px;
+}
+header{
+    background-color: var(--primary-color);
+}
+
+.nav-bar .nav-menu .nav-link {
+    color:var(--white-color);
+}
+
+.nav-bar .nav-logo .logo-text{
+    color:var(--white-color);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+image{
+    width: 100%;
+}
+button{
+    cursor:pointer;
+    background: none;
+    border: none;
+}
+header .nav-bar{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar .nav-menu{
+    display: flex;
+    gap: 10px;
+}
+.nav-bar .nav-menu .nav-link{
+    
+    padding: 10px 8px;
+    border-radius: var(--border-radius-m);
+    font-size: var(--font-size-m);
+    color:var(--white-color);
+    transition: 0.3s ease;
+}
+.nav-bar .nav-menu .nav-link:hover{
+    color:var(--dark-color);
+    background-color: var(--secondary-color);
+}
