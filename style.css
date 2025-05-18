@@ -82,3 +82,101 @@ header .nav-bar{
     color:var(--dark-color);
     background-color: var(--secondary-color);
 }
+.nav-bar.nav-logo.logo-text{
+    color:var(--white-color);
+    font-size:var(--font-size-xl);
+    font-weight:var(--font-weight-semibold);
+}
+.section-context{
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: var(--site-max-width);
+}
+.herosection{
+    background: var(--primary-color);
+    min-height: 100vh;
+}
+.herosection .hero-context{
+display: flex;
+align-items: center;
+min-height: 100vh;
+color:var(--white-color);
+justify-content: space-between ;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--primary-color);
+}
+.herosection .hero-details .title{
+    font-size: var(--font-size-xxl);
+    color:var(--secondary-color);
+    font-family:"miniver",sans-serif;
+}
+.herosection .hero-details .subtitle{
+    font-size: var(--font-size-xl);
+    margin-top: 8px;
+    max-width: 70%;
+    font-weight: var(--font-weight-semibold);
+}
+.herosection .hero-details .description{
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-size:var(--font-size-m);
+}
+.herosection.image-wrapper{
+    max-width: 500px;
+    margin-right: 30px;
+}
+.herosection .hero-details .button{
+    padding: 10px 26px;
+    color:var(--primary-color);
+    background: var(--secondary-color);
+    border-radius: var(--border-radius-m);
+    font-weight: var(--border-radius-m);
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+.herosection .hero-details .buttons{
+    display: flex;
+    gap: 23px;
+}
+.herosection .hero-details .button:hover,
+.herosection .hero-details .contact-us{
+    color:var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+}
+.herosection .hero-details .contact-us:hover{
+    color:var(--primary-color);
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+@media screen and (max-width:900px){
+    .root{
+    --font-size-m: 1rem;
+    --font-size-1: 1.3rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 1.8rem;
+    }
+    .nav-bar .nav-menu{
+        display:block;
+        position:fixed;
+        left:0;
+        top:0;
+        width:300px;
+        height:100%;
+        background: var(--white-color);
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+    .nav-bar .nav-menu .nav-link{
+        color:var(--dark-color);
+        display: block;
+        margin-top: 17px;
+        font-size: var(--font-size-1);
+    }
+}
